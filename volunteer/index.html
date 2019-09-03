@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!--
+Kevin Pham
+A GUI for the back-end of MTM Tracker that can be used to keep data updated.
+-->
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>MTM Volunteers</title>
+    <link rel="icon" href="../images/icon.png" />
+    <link rel="image_src" href="../images/thumbnail.png" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>M a k e T h e M a g i c</h1>
+    </header>
+    <main>
+      <form>
+        <label for="password">Password:</label> <input type="password" id="password" name="password" placeholder="Password" />
+      </form>
+
+      <form>
+        <label for="item">Item Number:</label> <input type="number" id="item" name="item" placeholder="1234" />
+        <button type="button" id="preview-btn">Preview</button>
+        <section id="preview">
+          <h2></h2>
+          <h3></h3>
+          <p></p>
+        </section>
+        <label for="paddle">Paddle Number:</label> <input type="number" id="paddle" name="paddle" placeholder="1234" />
+        <br />
+        <label for="amount">Bid Amount:</label> <input type="number" id="amount" name="amount" placeholder="1000" />
+        <button type="button" id="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>
+        Made by <a href="mailto:kevinp7@uw.edu">Kevin "Russell" Pham</a>
+      </p>
+    </footer>  </body>
+</html>

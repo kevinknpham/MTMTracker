@@ -1,0 +1,8 @@
+Huskies Basket
+This is a another description a basket.  Hello World again.
+images/huskies.com_maven-user-photos_washington_football_8vveh4chaeuepef20na1va_wsukg7ophkapoeshtclura
+true
+1000
+Highest Bidder - 1000
+Second Highest - 400
+Third Highest - 300

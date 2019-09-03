@@ -1,0 +1,98 @@
+/*
+Kevin Pham
+This provides style and layout for the volunteer site used to update
+data for Make the Magic.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900|Monoton&display=swap');
+
+body, main {
+  margin: 10px;;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 30px 10px;
+  height: auto;
+  background: linear-gradient(180deg, #0066FF 0%, #64C7FF 25.52%, #64FFFF 61.98%, #9AFFB0 100%);
+}
+  
+h1 {
+  text-align: center;
+  font-family: 'Monoton', cursive;
+  color: #cccccc;
+  text-shadow: 0 0 5px white;
+  font-size: 60pt;
+}
+
+main {
+  font-weight: 700;
+}
+
+main, footer, button {
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  font-size: 40pt;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+  font-size: 40pt;
+  font-family: 'Darker Grotesque', sans-serif;
+  border-bottom: solid 3px blue;
+}
+
+button {
+  display: block;
+  width: 25%;
+  height: 60px;
+  margin: 20px auto;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20pt;
+  text-align: center;
+}
+
+#preview-btn {
+  background-color: #3397FF;
+}
+
+#preview {
+  width: 90vw;
+  height: 60vh;
+  border: dashed 5px #960000;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#preview h2 {
+  font-size: 60pt;
+}
+
+#preview h3 {
+  font-size: 50pt;
+}
+
+#preview p {
+  font-size: 40pt;
+}
+
+#submit {
+  background-color: #FF5050;
+}
+
+footer {
+  font-size: 20pt;
+  text-align: center;
+  background: #BBBBBB;
+  height: auto;
+  padding: 5px;
+}

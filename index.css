@@ -1,0 +1,343 @@
+/*
+Kevin Pham
+Provides style and layout for the MTM Tracker, including for cards with several
+different colors.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Red+Hat+Display|Rock+Salt&display=swap');
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 0;
+  margin: 0;
+  background:
+	/* Pineapple details */
+	radial-gradient(circle closest-side at 50px 50px, #FB8B24 3px, transparent 0),
+	radial-gradient(circle closest-side at 40px 60px, #FB8B24 3px, transparent 0),
+	radial-gradient(circle closest-side at 60px 60px, #FB8B24 3px, transparent 0),
+	radial-gradient(circle closest-side at 50px 70px, #FB8B24 3px, transparent 0),
+	
+	radial-gradient(circle closest-side at 150px 165px, #FB8B24 3px, transparent 0),
+	radial-gradient(circle closest-side at 140px 175px, #FB8B24 3px, transparent 0),
+	radial-gradient(circle closest-side at 160px 175px, #FB8B24 3px, transparent 0),
+	radial-gradient(circle closest-side at 150px 185px, #FB8B24 3px, transparent 0),
+	
+	/* Pineapple base */
+	radial-gradient(ellipse closest-side at 50px 60px, #F9A734 18px, transparent 0),
+	
+	radial-gradient(ellipse closest-side at 150px 175px, #F9A734 18px, transparent 0),
+	
+	/* Pineapple leafs */
+	radial-gradient(circle closest-side at 30px 40px, #F9D8D4 15px, transparent 0),
+	radial-gradient(circle closest-side at 40px 35px, #36964C 15px, transparent 0),
+	radial-gradient(circle closest-side at 70px 40px, #F9D8D4 15px, transparent 0),
+	radial-gradient(circle closest-side at 60px 35px, #286E38 15px, transparent 0),
+	
+	radial-gradient(circle closest-side at 130px 155px, #F9D8D4 15px, transparent 0),
+	radial-gradient(circle closest-side at 140px 150px, #36964C 15px, transparent 0),
+	radial-gradient(circle at 170px 155px, #F9D8D4 15px, transparent 0),
+	radial-gradient(circle at 160px 150px, #286E38 15px, transparent 0);
+  
+	background-color: #F9D8D4;
+	background-size: 180px 210px;
+	animation: animatedBackground .5s cubic-bezier(.61,-0.64,.58,1.46) forwards;}
+
+@keyframes animatedBackground {
+	from { background-position: 0 50%; }
+	to { background-position: 0 0; }
+}
+
+header {
+  background: linear-gradient(152.82deg, #00CD15 1.31%, rgba(0, 172, 94, 0.905093) 25.78%, rgba(63, 200, 201, 0.840156) 50.26%, rgba(0, 138, 168, 0.757459) 74.73%, rgba(0, 56, 255, 0.67) 99.21%);
+  margin: 0;
+  padding: 0 0 20px 0;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  font-size: 50pt;
+  text-shadow: 5px 3px #AAAAAA, -5px -3px #444444;
+}
+
+#filter {
+  display: block;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  text-decoration: none;
+  font-style: italic;
+  background: linear-gradient(127.41deg, #FFB800 8.91%, #FFD850 23.4%, #FFD850 33.93%, #E4B200 62.47%, #D9A900 93.2%);
+  font-weight: 600;
+  font-size: 20pt;
+  text-align: center;
+  font-family: 'Beth Ellen', cursive;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+#filter.selected {
+  border: groove 10px white;
+  background: white;
+}
+
+#card-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 10px;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
+#modal {
+  position: fixed;
+  z-index: 1;
+  padding: 10px;
+  left: 5vw;
+  top: 10vh;
+  width: 90vw;
+  height: 80vh;
+  overflow: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px rgba(200,200,200,.25);
+}
+
+#close {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  padding: 5px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 30pt;
+}
+
+#close:hover {
+  background-color: rgb(50,50,50);
+}
+
+#sold-badge {
+  width: 7vw;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  padding: 5px;
+  position: relative;
+  left: 60vw;
+  top: 10px;
+  font-size: 30pt;
+  display: none;
+}
+
+#modal-name {
+  font-size: 80pt;
+  text-align: center;
+}
+
+#modal-img {
+  display: block;
+  margin: auto;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+}
+
+#modal-description {
+  font-size: 30pt;
+}
+
+#modal-bids h3 {
+  font-size: 70pt;
+  text-shadow: 0 0 20px white;
+}
+
+.bid {
+  display: flex;
+  justify-content: space-around;
+}
+
+#bid1 {
+  font-size: 60pt;
+  font-weight: 600;
+}
+
+#bid2, #bid3 {
+  font-size: 40pt;
+}
+
+#loading {
+  position: fixed;
+  left: 15vw;
+  right: 15vw;
+  top: 40vh;
+  width: 70vw;
+  margin: auto;
+}
+
+footer {
+  background-color: #878787;
+  height: auto;
+  padding: 5px;
+  margin: 0;
+}
+
+footer p {
+  font-size: 16pt;
+  text-align: center;
+}
+
+/*==========Scrollbar==========*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0047FF 0%, #00FFE0 46.87%, #33FF00 99.99%, rgba(0, 255, 224, 0) 100%);
+  border-radius: 5px;
+}
+
+/*==========For use with JavaScript==========*/
+
+.card {
+  position: relative;
+  width: 80%;
+  height: auto;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px 5px;
+  margin-bottom: 20px;
+}
+
+.card:nth-child(odd) {
+  margin-left: 5%;
+}
+
+.card:nth-child(even) {
+  margin-left: 10%;
+}
+
+.id {
+  width: 36pt;
+  height: 36pt;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  line-height: 36pt;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px white;
+  padding: auto;
+}
+
+.card img {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px white;
+  margin: 10px 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.name, .price {
+  display: block;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 20pt;
+}
+
+.price {
+  font-size: 40pt;
+}
+
+/*==========Colors==========*/
+
+.color1 {
+  box-shadow: 10px 10px #001AFF;
+  background-color: #4FAAFF;
+}
+
+.color1 .id, .color1 img {
+  border: solid 4px #4FAAFF;
+}
+
+.color1-modal {
+  background: linear-gradient(147.33deg, #0066FF 0%, rgba(132, 196, 255, 0.619718) 38.09%, rgba(28, 255, 241, 0) 57.7%);
+}
+
+.color2 {
+  box-shadow: 10px 10px #EC7676;
+  background-color: #FFA8A8;
+}
+
+.color2 .id, .color2 img {
+  border: solid 4px #FFA8A8;
+}
+
+.color2-modal {
+  background: linear-gradient(147.33deg, #FF6565 0%, rgba(255, 198, 132, 0.619718) 26%, rgba(255, 246, 28, 0) 57.7%);
+}
+
+.sold {
+  background: gray;
+  box-shadow: 10px 10px black;
+}
+
+.sold img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.sold .id, .sold img {
+  border: solid 4px black;
+}
+
+.sold-modal {
+  background: linear-gradient(180deg, #5C5C5C 0%, rgba(255, 111, 111, 0.37) 100%);
+}
+
+.sold-modal #sold-badge {
+  display: inline;
+}
+
+.super-silent, .super-silent-modal {
+  background: linear-gradient(127.41deg, #FFB800 8.91%, #FFD850 23.4%, #FFD850 33.93%, #E4B200 62.47%, #D9A900 93.2%);
+  box-shadow: 10px 10px #C99900;
+}
+
+.super-silent img {
+  border: solid 4px rgba(255, 255, 255, 0);
+}
+
+.super-silent .id {
+  border: solid 4px #FFB800;
+}
+
+.hidden {
+  display: none;
+}

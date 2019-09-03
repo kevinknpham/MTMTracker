@@ -1,0 +1,8 @@
+Java Java Coffee
+Coffee basket and treats
+images/loading.gif
+false
+400
+65 - 89
+64 - 88
+65 - 87

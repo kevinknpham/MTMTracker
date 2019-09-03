@@ -1,0 +1,8 @@
+Seattle Arts and Culture
+MoPOP, Pacific Science Center, Seattle Aquarium
+images/bob.png
+false
+500
+68 - 500
+30 - 200
+40 - 100

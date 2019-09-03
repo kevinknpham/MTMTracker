@@ -1,0 +1,8 @@
+Bob
+Bob Bob Bob Bob Bob Bob Bob Bob Bob Bob Bob Bob Bob Bob Bob Bob Bob
+images/bob.png
+false
+200
+59 - 155
+80 - 150
+58 - 145

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!--
+Kevin Pham
+A tracker for auction items at Make The Magic.  Will report highest bid and
+general info about each item.
+-->
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Make The Magic!</title>
+    <link rel="icon" href="images/icon.png" />
+    <link rel="image_src" href="images/thumbnail.png" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Make The Magic</h1>
+      <nav><button type="button" id="filter">Super-Silent</button></nav>
+    </header>
+    <main>
+      <article id="card-container">
+        <!--Will be filled by JavaScript-->
+      </article>
+      
+      <article id="modal" class="hidden super-silent-modal">
+        <div id="modal-main">
+          <span id="close">Close</span>
+          <span id="sold-badge">Sold</span>
+          <h2 id="modal-name">Seahawks</h2>
+          <div><img id="modal-img" src="images/almonds.jpeg" alt="almonds!" /></div>
+          <p id="modal-description">They're almonds, not cashews</p>
+          <section id="modal-bids">
+            <h3>Highest Bids</h3>
+            <div id="bid1" class="bid">
+              <span class="amount">$900</span>
+              <span class="paddle">190</span>
+            </div>
+            <div id="bid2" class="bid">
+              <span class="amount">$800</span>
+              <span class="paddle">40</span>
+            </div>
+            <div id="bid3" class="bid">
+              <span class="amount">$200</span>
+              <span class="paddle">30</span>
+            </div>
+          </section>
+        </div>
+        <img id="loading" src="images/loading.gif" alt="loading animation" />
+      </article>
+    </main>
+    <footer>
+      <p>
+        Made by <a href="mailto:kevinp7@uw.edu">Kevin "Russell" Pham</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+Puget Sound Cruise
+Argosy harbor cruise
+images/bob.png
+true
+500
+56 - 300
+45 - 200

@@ -1,0 +1,7 @@
+Almonds
+They are not cashews
+images/almonds.jpeg
+false
+500
+Highest Bidder - 500
+Second Highest - 200
