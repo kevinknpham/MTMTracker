@@ -10,41 +10,8 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   padding: 0;
   margin: 0;
-  background:
-	/* Pineapple details */
-	radial-gradient(circle closest-side at 50px 50px, #FB8B24 3px, transparent 0),
-	radial-gradient(circle closest-side at 40px 60px, #FB8B24 3px, transparent 0),
-	radial-gradient(circle closest-side at 60px 60px, #FB8B24 3px, transparent 0),
-	radial-gradient(circle closest-side at 50px 70px, #FB8B24 3px, transparent 0),
-	
-	radial-gradient(circle closest-side at 150px 165px, #FB8B24 3px, transparent 0),
-	radial-gradient(circle closest-side at 140px 175px, #FB8B24 3px, transparent 0),
-	radial-gradient(circle closest-side at 160px 175px, #FB8B24 3px, transparent 0),
-	radial-gradient(circle closest-side at 150px 185px, #FB8B24 3px, transparent 0),
-	
-	/* Pineapple base */
-	radial-gradient(ellipse closest-side at 50px 60px, #F9A734 18px, transparent 0),
-	
-	radial-gradient(ellipse closest-side at 150px 175px, #F9A734 18px, transparent 0),
-	
-	/* Pineapple leafs */
-	radial-gradient(circle closest-side at 30px 40px, #F9D8D4 15px, transparent 0),
-	radial-gradient(circle closest-side at 40px 35px, #36964C 15px, transparent 0),
-	radial-gradient(circle closest-side at 70px 40px, #F9D8D4 15px, transparent 0),
-	radial-gradient(circle closest-side at 60px 35px, #286E38 15px, transparent 0),
-	
-	radial-gradient(circle closest-side at 130px 155px, #F9D8D4 15px, transparent 0),
-	radial-gradient(circle closest-side at 140px 150px, #36964C 15px, transparent 0),
-	radial-gradient(circle at 170px 155px, #F9D8D4 15px, transparent 0),
-	radial-gradient(circle at 160px 150px, #286E38 15px, transparent 0);
-  
-	background-color: #F9D8D4;
-	background-size: 180px 210px;
-	animation: animatedBackground .5s cubic-bezier(.61,-0.64,.58,1.46) forwards;}
-
-@keyframes animatedBackground {
-	from { background-position: 0 50%; }
-	to { background-position: 0 0; }
+  background-color: #94ffbf;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23009cf7' fill-opacity='0.25' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 header {
