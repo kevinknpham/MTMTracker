@@ -4,11 +4,11 @@ This is the CSS page for index.html.  It will provide styles for the page
 including the formatting, color, and animations.
 */
 
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Nunito|Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Nunito|Saira+Stencil+One&display=swap');
 
 :root {
     --main-font: 'Nunito', sans-serif;
-    --title-font: 'Kaushan Script', cursive;
+    --title-font: 'Cabin', sans-serif;
     --loading-title-font: 'Saira Stencil One', cursive;
 }
 
@@ -54,7 +54,7 @@ main {
     position: relative;
     top: -101vh;
     left: -1%;
-    background: salmon;
+    background: linear-gradient(180deg, #1B9FFF 0%, #0D42FF 100%);
     border: 2px dashed #888;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -67,7 +67,8 @@ main {
 #front h2 {
     text-align: center;
     align-self: center;
-    font-size: 40pt;
+    font-size: 80pt;
+    text-shadow: 2px 2px white;
     font-family: var(--title-font);
     grid-area: name;
 }
@@ -87,6 +88,6 @@ main {
     align-self: center;
     font-family: var(--main-font);
     padding: 3vw;
-    font-size: 20pt;
+    font-size: 40pt;
     grid-area: desc;
 }
