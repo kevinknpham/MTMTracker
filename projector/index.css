@@ -1,0 +1,92 @@
+/*
+Kevin Pham
+This is the CSS page for index.html.  It will provide styles for the page
+including the formatting, color, and animations.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Nunito|Saira+Stencil+One&display=swap');
+
+:root {
+    --main-font: 'Nunito', sans-serif;
+    --title-font: 'Kaushan Script', cursive;
+    --loading-title-font: 'Saira Stencil One', cursive;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#back {
+    height: 100%;
+    background: linear-gradient(132.86deg, #FF0000 0%, #FAFF00 29.24%, #00FFE0 50.22%, #AFADFF 72.95%, #FFADED 99.33%);
+}
+
+#loading-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#loading-info h1 {
+    font-size: 100pt;
+    font-family: var(--loading-title-font);
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 5px 5px #333;
+}
+
+#loading-info p {
+    font-family: var(--main-font);
+    font-size: 16pt;
+}
+
+#front {
+    height: 102%;
+    width: 102%;
+    position: relative;
+    top: -101vh;
+    left: -1%;
+    background: salmon;
+    border: 2px dashed #888;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+        "name desc"
+        "pic desc";
+}
+
+#front h2 {
+    text-align: center;
+    align-self: center;
+    font-size: 40pt;
+    font-family: var(--title-font);
+    grid-area: name;
+}
+
+#front img {
+    display: block;
+    grid-area: pic;
+    border-radius: 50%;
+    border: 3px black solid;
+    box-shadow: 0 0 0 3px white;
+    margin: auto;
+    width: 70%;
+}
+
+#front p {
+    text-align: center;
+    align-self: center;
+    font-family: var(--main-font);
+    padding: 3vw;
+    font-size: 20pt;
+    grid-area: desc;
+}
