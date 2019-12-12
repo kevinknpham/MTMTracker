@@ -5,9 +5,13 @@ different colors.
 */
 
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Red+Hat+Display|Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+
 
 body {
   font-family: 'Red Hat Display', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   background-color: #94ffbf;
@@ -15,9 +19,9 @@ body {
 }
 
 header {
-  background: linear-gradient(152.82deg, #00CD15 1.31%, rgba(0, 172, 94, 0.905093) 25.78%, rgba(63, 200, 201, 0.840156) 50.26%, rgba(0, 138, 168, 0.757459) 74.73%, rgba(0, 56, 255, 0.67) 99.21%);
+  background: radial-gradient(100% 100% at 50.04% 100%, #FAFF00 0%, #FAFF00 17.19%, #75FFE6 46.87%, #2DCBE3 90.63%, #4CB8F4 100%);
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0;
   height: auto;
 }
 
@@ -37,19 +41,16 @@ h1 {
   margin-right: auto;
   border: none;
   text-decoration: none;
-  font-style: italic;
-  background: linear-gradient(127.41deg, #FFB800 8.91%, #FFD850 23.4%, #FFD850 33.93%, #E4B200 62.47%, #D9A900 93.2%);
+  background: transparent;
   font-weight: 600;
   font-size: 20pt;
   text-align: center;
-  font-family: 'Beth Ellen', cursive;
-  color: white;
-  text-shadow: 0 0 5px black;
+  font-family: 'Lilita One', cursive;
+  color: #aaa;
 }
 
 #filter.selected {
-  border: groove 10px white;
-  background: white;
+  text-shadow: 5px 5px #00ffd9;
 }
 
 #card-container {

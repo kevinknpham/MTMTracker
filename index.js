@@ -181,7 +181,7 @@ JS file that provides behavior for modal and loads info for each item.
   
   function error(err) {
     console.error(err);
-    alert("Sorry, we can't get the auction items right now.");
+    // alert("Sorry, we can't get the auction items right now.");
   }
   
   function getRandomIndex(arr) {
