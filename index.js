@@ -10,6 +10,18 @@ JS file that provides behavior for modal and loads info for each item.
   const COLORS = ["color2"];
   const NUM_BIDS = 3;
   
+  // low is inclusive, high is exclusive
+  const ANIMATION_DETAILS = {
+    duration: {
+      low: 5,
+      high: 16
+    },
+    delay: {
+      low: 0,
+      high: 5
+    }
+  }
+  
   window.addEventListener("load", init);
   
   function init() {
@@ -119,6 +131,9 @@ JS file that provides behavior for modal and loads info for each item.
     result.addEventListener("click", function() {
       generateModal(color, idNum);
     });
+
+    result.style.animationDuration = randomBetween(ANIMATION_DETAILS.duration.low, ANIMATION_DETAILS.duration.high) + "s";
+    result.style.animationDelay = randomBetween(ANIMATION_DETAILS.delay.low, ANIMATION_DETAILS.delay.high);
     
     return result;
   }
@@ -188,6 +203,10 @@ JS file that provides behavior for modal and loads info for each item.
   
   function getRandomIndex(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  function randomBetween(low, high) {
+    return Math.floor(Math.random() * (high - low)) + low;
   }
   
   const ce = (el) => document.createElement(el);

@@ -171,15 +171,27 @@ footer p {
   align-items: center;
   border-radius: 20px 5px;
   margin-bottom: 20px;
+  animation-name: stagger;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
-.card:nth-child(odd) {
+@keyframes stagger {
+  0%, 100% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 10%;
+  }
+}
+
+/* .card:nth-child(odd) {
   margin-left: 5%;
 }
 
 .card:nth-child(even) {
   margin-left: 10%;
-}
+} */
 
 .id {
   width: 36pt;
