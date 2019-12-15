@@ -7,7 +7,7 @@ JS file that provides behavior for modal and loads info for each item.
   "use strict";
   
   const URL_BASE = "mtmReader.php";
-  const COLORS = ["color1", "color2"];
+  const COLORS = ["color2"];
   const NUM_BIDS = 3;
   
   window.addEventListener("load", init);
@@ -119,6 +119,7 @@ JS file that provides behavior for modal and loads info for each item.
     result.addEventListener("click", function() {
       generateModal(color, idNum);
     });
+    
     return result;
   }
   

@@ -15,14 +15,15 @@ body {
   padding: 0;
   margin: 0;
   background-color: #94ffbf;
-  background: linear-gradient(180deg, #0D42FF 0%, #67BFFF 100%);
+  background: linear-gradient(180deg, #0021CE 0%, #00D1FF 60%, #40FFBA 75%, #00F0FF 90%, #85A7FF 100%);
 }
 
 header {
-  background: radial-gradient(100% 100% at 50.04% 100%, #FAFF00 0%, #FAFF00 17.19%, #75FFE6 46.87%, #2DCBE3 90.63%, #4CB8F4 100%);
+  background: radial-gradient(100% 100% at 50.04% 100%, #FAFF00 0%, #FAFF00 17.19%, #75FFE6 28.13%, #2DCBE3 82.29%, #4CB8F4 100%);
   margin: 0;
   padding: 0;
   height: auto;
+  width: 103vw;
 }
 
 h1 {
@@ -228,7 +229,7 @@ footer p {
 
 .color1 {
   box-shadow: 10px 10px #001AFF;
-  background-color: #4FAAFF;
+  background: radial-gradient(23.59% 108.32% at 77.48% 51.29%, #28FFF2 0%, rgba(40, 173, 248, 0.24) 100%), radial-gradient(26.36% 121.05% at 26.41% 50%, #B072FF 0%, rgba(84, 132, 255, 0.57) 100%);
 }
 
 .color1 .id, .color1 img {
@@ -240,8 +241,8 @@ footer p {
 }
 
 .color2 {
-  box-shadow: 10px 10px #EC7676;
-  background-color: #FFA8A8;
+  box-shadow: 10px 10px rgba(0, 200, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .color2 .id, .color2 img {
@@ -253,8 +254,8 @@ footer p {
 }
 
 .sold {
-  background: gray;
-  box-shadow: 10px 10px black;
+  background: rgba(30, 30, 30, 0.5);
+  box-shadow: 10px 10px rgba(10, 10, 10, 0.8);
 }
 
 .sold img {
