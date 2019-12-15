@@ -15,7 +15,6 @@ JS file that provides behavior for modal and loads info for each item.
   function init() {
     getItems();
     id("close").addEventListener("click", closeModal);
-    id("filter").addEventListener("click", toggleSuperSilent);
     setInterval(update, 120000);
   }
   
@@ -40,6 +39,8 @@ JS file that provides behavior for modal and loads info for each item.
     }
   }
   
+  // This function toggles Super-Silent, but the button was removed.
+  // I left this function here in case it was ever needed again.
   function toggleSuperSilent() {
     if (this.classList.contains("selected")) {
       this.classList.remove("selected");
