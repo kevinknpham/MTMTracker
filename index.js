@@ -7,7 +7,7 @@ JS file that provides behavior for modal and loads info for each item.
   "use strict";
   
   const URL_BASE = "mtmReader.php";
-  const COLORS = ["color2"];
+  const COLORS = ["color1"];
   const NUM_BIDS = 3;
   
   // low is inclusive, high is exclusive
@@ -18,7 +18,7 @@ JS file that provides behavior for modal and loads info for each item.
     },
     delay: {
       low: 0,
-      high: 5
+      high: 8
     }
   }
   
@@ -133,7 +133,7 @@ JS file that provides behavior for modal and loads info for each item.
     });
 
     result.style.animationDuration = randomBetween(ANIMATION_DETAILS.duration.low, ANIMATION_DETAILS.duration.high) + "s";
-    result.style.animationDelay = randomBetween(ANIMATION_DETAILS.delay.low, ANIMATION_DETAILS.delay.high);
+    result.style.animationDelay = -randomBetween(ANIMATION_DETAILS.delay.low, ANIMATION_DETAILS.delay.high) + "s";
     
     return result;
   }

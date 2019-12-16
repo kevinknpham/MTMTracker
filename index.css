@@ -15,7 +15,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #94ffbf;
-  background: linear-gradient(180deg, #0021CE 0%, #00D1FF 60%, #40FFBA 75%, #00F0FF 90%, #85A7FF 100%);
+  background: linear-gradient(180deg, rgb(82, 163, 255) 0%, #00D1FF 60%, #40FFBA 75%, #00F0FF 90%, #85A7FF 100%);
 }
 
 header {
@@ -42,6 +42,7 @@ h1 {
   width: 100%;
   height: auto;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 #modal {
@@ -137,6 +138,7 @@ footer {
   height: auto;
   padding: 5px;
   margin: 0;
+  width: 103vw;
 }
 
 footer p {
@@ -207,6 +209,7 @@ footer p {
   border-radius: 50%;
   box-shadow: 0 0 0 2px white;
   padding: auto;
+  color: black;
 }
 
 .card img {
@@ -239,35 +242,28 @@ footer p {
 
 /*==========Colors==========*/
 
-.color1 {
-  box-shadow: 10px 10px #001AFF;
-  background: radial-gradient(23.59% 108.32% at 77.48% 51.29%, #28FFF2 0%, rgba(40, 173, 248, 0.24) 100%), radial-gradient(26.36% 121.05% at 26.41% 50%, #B072FF 0%, rgba(84, 132, 255, 0.57) 100%);
+.color1, .super-silent {
+  box-shadow: 10px 10px rgba(224, 102, 255, 0.8);
+  background-color: rgba(255, 140, 255, 0.6);
 }
 
-.color1 .id, .color1 img {
-  border: solid 4px #4FAAFF;
+.color1 .id, .color1 img, .super-silent .id, .super-silent img {
+  border: solid 4px rgb(255, 140, 255);
 }
 
 .color1-modal {
-  background: linear-gradient(147.33deg, #0066FF 0%, rgba(132, 196, 255, 0.619718) 38.09%, rgba(28, 255, 241, 0) 57.7%);
-}
-
-.color2 {
-  box-shadow: 10px 10px rgba(0, 200, 255, 0.9);
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.color2 .id, .color2 img {
-  border: solid 4px #FFA8A8;
-}
-
-.color2-modal {
   background: linear-gradient(147.33deg, #FF6565 0%, rgba(255, 198, 132, 0.619718) 26%, rgba(255, 246, 28, 0) 57.7%);
 }
 
+.super-silent-modal {
+  background: linear-gradient(127.41deg, #FFB800 8.91%, #FFD850 23.4%, #FFD850 33.93%, #E4B200 62.47%, #D9A900 93.2%);
+  box-shadow: 10px 10px #C99900;
+}
+
 .sold {
-  background: rgba(30, 30, 30, 0.5);
-  box-shadow: 10px 10px rgba(10, 10, 10, 0.8);
+  background: rgba(50, 100, 255, 0.3);
+  box-shadow: 10px 10px rgb(40, 80, 200, .5);
+  color: white;
 }
 
 .sold img {
@@ -276,7 +272,7 @@ footer p {
 }
 
 .sold .id, .sold img {
-  border: solid 4px black;
+  border: solid 4px rgb(40, 80, 200);
 }
 
 .sold-modal {
@@ -287,6 +283,7 @@ footer p {
   display: inline;
 }
 
+/* 
 .super-silent, .super-silent-modal {
   background: linear-gradient(127.41deg, #FFB800 8.91%, #FFD850 23.4%, #FFD850 33.93%, #E4B200 62.47%, #D9A900 93.2%);
   box-shadow: 10px 10px #C99900;
@@ -299,6 +296,7 @@ footer p {
 .super-silent .id {
   border: solid 4px #FFB800;
 }
+*/
 
 .hidden {
   display: none;
@@ -318,7 +316,7 @@ footer p {
 .bubble-1 {
   opacity: 0.55;
   left: 74vw;
-  top: 64vh;
+  top: 64%;
   animation: move-1 30.02s infinite;
   -moz-transform: translate(0, 0) scale(1.42);
   -ms-transform: translate(0, 0) scale(1.42);
@@ -328,7 +326,7 @@ footer p {
 .bubble-2 {
   opacity: 0.9;
   left: 86vw;
-  top: 60vh;
+  top: 60%;
   animation: move-2 30.04s infinite;
   -moz-transform: translate(0, 0) scale(0.95);
   -ms-transform: translate(0, 0) scale(0.95);
@@ -338,7 +336,7 @@ footer p {
 .bubble-3 {
   opacity: 0.6;
   left: 64vw;
-  top: 43vh;
+  top: 43%;
   animation: move-3 30.06s infinite;
   -moz-transform: translate(0, 0) scale(1.99);
   -ms-transform: translate(0, 0) scale(1.99);
@@ -348,7 +346,7 @@ footer p {
 .bubble-4 {
   opacity: 0.43;
   left: 65vw;
-  top: 49vh;
+  top: 49%;
   animation: move-4 30.08s infinite;
   -moz-transform: translate(0, 0) scale(0.08);
   -ms-transform: translate(0, 0) scale(0.08);
@@ -358,7 +356,7 @@ footer p {
 .bubble-5 {
   opacity: 0.02;
   left: 87vw;
-  top: 62vh;
+  top: 62%;
   animation: move-5 30.1s infinite;
   -moz-transform: translate(0, 0) scale(0.91);
   -ms-transform: translate(0, 0) scale(0.91);
@@ -368,7 +366,7 @@ footer p {
 .bubble-6 {
   opacity: 0.19;
   left: 65vw;
-  top: 89vh;
+  top: 89%;
   animation: move-6 30.12s infinite;
   -moz-transform: translate(0, 0) scale(1.76);
   -ms-transform: translate(0, 0) scale(1.76);
@@ -378,7 +376,7 @@ footer p {
 .bubble-7 {
   opacity: 0.48;
   left: 62vw;
-  top: 65vh;
+  top: 65%;
   animation: move-7 30.14s infinite;
   -moz-transform: translate(0, 0) scale(1.96);
   -ms-transform: translate(0, 0) scale(1.96);
@@ -388,7 +386,7 @@ footer p {
 .bubble-8 {
   opacity: 0.06;
   left: 80vw;
-  top: 62vh;
+  top: 62%;
   animation: move-8 30.16s infinite;
   -moz-transform: translate(0, 0) scale(1.24);
   -ms-transform: translate(0, 0) scale(1.24);
@@ -398,7 +396,7 @@ footer p {
 .bubble-9 {
   opacity: 0.82;
   left: 80vw;
-  top: 58vh;
+  top: 58%;
   animation: move-9 30.18s infinite;
   -moz-transform: translate(0, 0) scale(1.68);
   -ms-transform: translate(0, 0) scale(1.68);
@@ -408,7 +406,7 @@ footer p {
 .bubble-10 {
   opacity: 0.09;
   left: 3vw;
-  top: 74vh;
+  top: 74%;
   animation: move-10 30.2s infinite;
   -moz-transform: translate(0, 0) scale(2.05);
   -ms-transform: translate(0, 0) scale(2.05);
@@ -418,7 +416,7 @@ footer p {
 .bubble-11 {
   opacity: 0.57;
   left: 54vw;
-  top: 41vh;
+  top: 41%;
   animation: move-11 30.22s infinite;
   -moz-transform: translate(0, 0) scale(1.1);
   -ms-transform: translate(0, 0) scale(1.1);
@@ -428,7 +426,7 @@ footer p {
 .bubble-12 {
   opacity: 0.65;
   left: 10vw;
-  top: 21vh;
+  top: 21%;
   animation: move-12 30.24s infinite;
   -moz-transform: translate(0, 0) scale(0.68);
   -ms-transform: translate(0, 0) scale(0.68);
@@ -438,7 +436,7 @@ footer p {
 .bubble-13 {
   opacity: 0.62;
   left: 98vw;
-  top: 2vh;
+  top: 2%;
   animation: move-13 30.26s infinite;
   -moz-transform: translate(0, 0) scale(2.04);
   -ms-transform: translate(0, 0) scale(2.04);
@@ -448,7 +446,7 @@ footer p {
 .bubble-14 {
   opacity: 0.81;
   left: 20vw;
-  top: 89vh;
+  top: 89%;
   animation: move-14 30.28s infinite;
   -moz-transform: translate(0, 0) scale(0.44);
   -ms-transform: translate(0, 0) scale(0.44);
@@ -458,7 +456,7 @@ footer p {
 .bubble-15 {
   opacity: 0.49;
   left: 87vw;
-  top: 58vh;
+  top: 58%;
   animation: move-15 30.3s infinite;
   -moz-transform: translate(0, 0) scale(0.27);
   -ms-transform: translate(0, 0) scale(0.27);
@@ -468,7 +466,7 @@ footer p {
 .bubble-16 {
   opacity: 0.79;
   left: 6vw;
-  top: 18vh;
+  top: 18%;
   animation: move-16 30.32s infinite;
   -moz-transform: translate(0, 0) scale(1.18);
   -ms-transform: translate(0, 0) scale(1.18);
@@ -478,7 +476,7 @@ footer p {
 .bubble-17 {
   opacity: 0.87;
   left: 31vw;
-  top: 16vh;
+  top: 16%;
   animation: move-17 30.34s infinite;
   -moz-transform: translate(0, 0) scale(0.08);
   -ms-transform: translate(0, 0) scale(0.08);
@@ -488,7 +486,7 @@ footer p {
 .bubble-18 {
   opacity: 1;
   left: 27vw;
-  top: 66vh;
+  top: 66%;
   animation: move-18 30.36s infinite;
   -moz-transform: translate(0, 0) scale(0.78);
   -ms-transform: translate(0, 0) scale(0.78);
@@ -498,7 +496,7 @@ footer p {
 .bubble-19 {
   opacity: 0.47;
   left: 11vw;
-  top: 42vh;
+  top: 42%;
   animation: move-19 30.38s infinite;
   -moz-transform: translate(0, 0) scale(1.44);
   -ms-transform: translate(0, 0) scale(1.44);
@@ -508,7 +506,7 @@ footer p {
 .bubble-20 {
   opacity: 0.07;
   left: 25vw;
-  top: 91vh;
+  top: 91%;
   animation: move-20 30.4s infinite;
   -moz-transform: translate(0, 0) scale(1.24);
   -ms-transform: translate(0, 0) scale(1.24);
@@ -518,7 +516,7 @@ footer p {
 .bubble-21 {
   opacity: 0.93;
   left: 70vw;
-  top: 99vh;
+  top: 99%;
   animation: move-21 30.42s infinite;
   -moz-transform: translate(0, 0) scale(0.85);
   -ms-transform: translate(0, 0) scale(0.85);
@@ -528,7 +526,7 @@ footer p {
 .bubble-22 {
   opacity: 0.81;
   left: 25vw;
-  top: 5vh;
+  top: 5%;
   animation: move-22 30.44s infinite;
   -moz-transform: translate(0, 0) scale(0.95);
   -ms-transform: translate(0, 0) scale(0.95);
@@ -538,7 +536,7 @@ footer p {
 .bubble-23 {
   opacity: 0.83;
   left: 15vw;
-  top: 78vh;
+  top: 78%;
   animation: move-23 30.46s infinite;
   -moz-transform: translate(0, 0) scale(1.62);
   -ms-transform: translate(0, 0) scale(1.62);
@@ -548,7 +546,7 @@ footer p {
 .bubble-24 {
   opacity: 0.74;
   left: 23vw;
-  top: 54vh;
+  top: 54%;
   animation: move-24 30.48s infinite;
   -moz-transform: translate(0, 0) scale(1.4);
   -ms-transform: translate(0, 0) scale(1.4);
@@ -558,7 +556,7 @@ footer p {
 .bubble-25 {
   opacity: 0.49;
   left: 38vw;
-  top: 87vh;
+  top: 87%;
   animation: move-25 30.5s infinite;
   -moz-transform: translate(0, 0) scale(1.5);
   -ms-transform: translate(0, 0) scale(1.5);
@@ -568,7 +566,7 @@ footer p {
 .bubble-26 {
   opacity: 0.08;
   left: 93vw;
-  top: 80vh;
+  top: 80%;
   animation: move-26 30.52s infinite;
   -moz-transform: translate(0, 0) scale(0.31);
   -ms-transform: translate(0, 0) scale(0.31);
@@ -578,7 +576,7 @@ footer p {
 .bubble-27 {
   opacity: 0.63;
   left: 29vw;
-  top: 82vh;
+  top: 82%;
   animation: move-27 30.54s infinite;
   -moz-transform: translate(0, 0) scale(0.95);
   -ms-transform: translate(0, 0) scale(0.95);
@@ -588,7 +586,7 @@ footer p {
 .bubble-28 {
   opacity: 0.01;
   left: 46vw;
-  top: 84vh;
+  top: 84%;
   animation: move-28 30.56s infinite;
   -moz-transform: translate(0, 0) scale(1.36);
   -ms-transform: translate(0, 0) scale(1.36);
@@ -598,7 +596,7 @@ footer p {
 .bubble-29 {
   opacity: 0.44;
   left: 81vw;
-  top: 4vh;
+  top: 4%;
   animation: move-29 30.58s infinite;
   -moz-transform: translate(0, 0) scale(0.47);
   -ms-transform: translate(0, 0) scale(0.47);
@@ -608,7 +606,7 @@ footer p {
 .bubble-30 {
   opacity: 0.58;
   left: 58vw;
-  top: 92vh;
+  top: 92%;
   animation: move-30 30.6s infinite;
   -moz-transform: translate(0, 0) scale(1.67);
   -ms-transform: translate(0, 0) scale(1.67);
@@ -634,211 +632,211 @@ footer p {
 
 @keyframes move-1 {
   52% {
-    -moz-transform: translate(-21vw, -97vh);
-    -webkit-transform: translate(-21vw, -97vh);
-    transform: translate(-21vw, -97vh);
+    -moz-transform: translate(-21vw, -97%);
+    -webkit-transform: translate(-21vw, -97%);
+    transform: translate(-21vw, -97%);
   }
 }
 @keyframes move-2 {
   57% {
-    -moz-transform: translate(0vw, -74vh);
-    -webkit-transform: translate(0vw, -74vh);
-    transform: translate(0vw, -74vh);
+    -moz-transform: translate(0vw, -74%);
+    -webkit-transform: translate(0vw, -74%);
+    transform: translate(0vw, -74%);
   }
 }
 @keyframes move-3 {
   37% {
-    -moz-transform: translate(0vw, -4vh);
-    -webkit-transform: translate(0vw, -4vh);
-    transform: translate(0vw, -4vh);
+    -moz-transform: translate(0vw, -4%);
+    -webkit-transform: translate(0vw, -4%);
+    transform: translate(0vw, -4%);
   }
 }
 @keyframes move-4 {
   43% {
-    -moz-transform: translate(-51vw, -11vh);
-    -webkit-transform: translate(-51vw, -11vh);
-    transform: translate(-51vw, -11vh);
+    -moz-transform: translate(-51vw, -11%);
+    -webkit-transform: translate(-51vw, -11%);
+    transform: translate(-51vw, -11%);
   }
 }
 @keyframes move-5 {
   45% {
-    -moz-transform: translate(-50vw, -21vh);
-    -webkit-transform: translate(-50vw, -21vh);
-    transform: translate(-50vw, -21vh);
+    -moz-transform: translate(-50vw, -21%);
+    -webkit-transform: translate(-50vw, -21%);
+    transform: translate(-50vw, -21%);
   }
 }
 @keyframes move-6 {
   51% {
-    -moz-transform: translate(-38vw, -9vh);
-    -webkit-transform: translate(-38vw, -9vh);
-    transform: translate(-38vw, -9vh);
+    -moz-transform: translate(-38vw, -9%);
+    -webkit-transform: translate(-38vw, -9%);
+    transform: translate(-38vw, -9%);
   }
 }
 @keyframes move-7 {
   47% {
-    -moz-transform: translate(-19vw, -43vh);
-    -webkit-transform: translate(-19vw, -43vh);
-    transform: translate(-19vw, -43vh);
+    -moz-transform: translate(-19vw, -43%);
+    -webkit-transform: translate(-19vw, -43%);
+    transform: translate(-19vw, -43%);
   }
 }
 @keyframes move-8 {
   48% {
-    -moz-transform: translate(-30vw, -90vh);
-    -webkit-transform: translate(-30vw, -90vh);
-    transform: translate(-30vw, -90vh);
+    -moz-transform: translate(-30vw, -90%);
+    -webkit-transform: translate(-30vw, -90%);
+    transform: translate(-30vw, -90%);
   }
 }
 @keyframes move-9 {
   58% {
-    -moz-transform: translate(-47vw, -28vh);
-    -webkit-transform: translate(-47vw, -28vh);
-    transform: translate(-47vw, -28vh);
+    -moz-transform: translate(-47vw, -28%);
+    -webkit-transform: translate(-47vw, -28%);
+    transform: translate(-47vw, -28%);
   }
 }
 @keyframes move-10 {
   54% {
-    -moz-transform: translate(-87vw, -55vh);
-    -webkit-transform: translate(-87vw, -55vh);
-    transform: translate(-87vw, -55vh);
+    -moz-transform: translate(-87vw, -55%);
+    -webkit-transform: translate(-87vw, -55%);
+    transform: translate(-87vw, -55%);
   }
 }
 @keyframes move-11 {
   45% {
-    -moz-transform: translate(-73vw, -57vh);
-    -webkit-transform: translate(-73vw, -57vh);
-    transform: translate(-73vw, -57vh);
+    -moz-transform: translate(-73vw, -57%);
+    -webkit-transform: translate(-73vw, -57%);
+    transform: translate(-73vw, -57%);
   }
 }
 @keyframes move-12 {
   40% {
-    -moz-transform: translate(-21vw, -36vh);
-    -webkit-transform: translate(-21vw, -36vh);
-    transform: translate(-21vw, -36vh);
+    -moz-transform: translate(-21vw, -36%);
+    -webkit-transform: translate(-21vw, -36%);
+    transform: translate(-21vw, -36%);
   }
 }
 @keyframes move-13 {
   42% {
-    -moz-transform: translate(-4vw, -25vh);
-    -webkit-transform: translate(-4vw, -25vh);
-    transform: translate(-4vw, -25vh);
+    -moz-transform: translate(-4vw, -25%);
+    -webkit-transform: translate(-4vw, -25%);
+    transform: translate(-4vw, -25%);
   }
 }
 @keyframes move-14 {
   35% {
-    -moz-transform: translate(-61vw, -49vh);
-    -webkit-transform: translate(-61vw, -49vh);
-    transform: translate(-61vw, -49vh);
+    -moz-transform: translate(-61vw, -49%);
+    -webkit-transform: translate(-61vw, -49%);
+    transform: translate(-61vw, -49%);
   }
 }
 @keyframes move-15 {
   52% {
-    -moz-transform: translate(-28vw, -4vh);
-    -webkit-transform: translate(-28vw, -4vh);
-    transform: translate(-28vw, -4vh);
+    -moz-transform: translate(-28vw, -4%);
+    -webkit-transform: translate(-28vw, -4%);
+    transform: translate(-28vw, -4%);
   }
 }
 @keyframes move-16 {
   35% {
-    -moz-transform: translate(-98vw, -12vh);
-    -webkit-transform: translate(-98vw, -12vh);
-    transform: translate(-98vw, -12vh);
+    -moz-transform: translate(-98vw, -12%);
+    -webkit-transform: translate(-98vw, -12%);
+    transform: translate(-98vw, -12%);
   }
 }
 @keyframes move-17 {
   39% {
-    -moz-transform: translate(-5vw, -76vh);
-    -webkit-transform: translate(-5vw, -76vh);
-    transform: translate(-5vw, -76vh);
+    -moz-transform: translate(-5vw, -76%);
+    -webkit-transform: translate(-5vw, -76%);
+    transform: translate(-5vw, -76%);
   }
 }
 @keyframes move-18 {
   36% {
-    -moz-transform: translate(-80vw, -16vh);
-    -webkit-transform: translate(-80vw, -16vh);
-    transform: translate(-80vw, -16vh);
+    -moz-transform: translate(-80vw, -16%);
+    -webkit-transform: translate(-80vw, -16%);
+    transform: translate(-80vw, -16%);
   }
 }
 @keyframes move-19 {
   42% {
-    -moz-transform: translate(-99vw, -95vh);
-    -webkit-transform: translate(-99vw, -95vh);
-    transform: translate(-99vw, -95vh);
+    -moz-transform: translate(-99vw, -95%);
+    -webkit-transform: translate(-99vw, -95%);
+    transform: translate(-99vw, -95%);
   }
 }
 @keyframes move-20 {
   49% {
-    -moz-transform: translate(-74vw, -48vh);
-    -webkit-transform: translate(-74vw, -48vh);
-    transform: translate(-74vw, -48vh);
+    -moz-transform: translate(-74vw, -48%);
+    -webkit-transform: translate(-74vw, -48%);
+    transform: translate(-74vw, -48%);
   }
 }
 @keyframes move-21 {
   48% {
-    -moz-transform: translate(-80vw, -9vh);
-    -webkit-transform: translate(-80vw, -9vh);
-    transform: translate(-80vw, -9vh);
+    -moz-transform: translate(-80vw, -9%);
+    -webkit-transform: translate(-80vw, -9%);
+    transform: translate(-80vw, -9%);
   }
 }
 @keyframes move-22 {
   55% {
-    -moz-transform: translate(-84vw, -59vh);
-    -webkit-transform: translate(-84vw, -59vh);
-    transform: translate(-84vw, -59vh);
+    -moz-transform: translate(-84vw, -59%);
+    -webkit-transform: translate(-84vw, -59%);
+    transform: translate(-84vw, -59%);
   }
 }
 @keyframes move-23 {
   32% {
-    -moz-transform: translate(-99vw, -29vh);
-    -webkit-transform: translate(-99vw, -29vh);
-    transform: translate(-99vw, -29vh);
+    -moz-transform: translate(-99vw, -29%);
+    -webkit-transform: translate(-99vw, -29%);
+    transform: translate(-99vw, -29%);
   }
 }
 @keyframes move-24 {
   56% {
-    -moz-transform: translate(-53vw, -68vh);
-    -webkit-transform: translate(-53vw, -68vh);
-    transform: translate(-53vw, -68vh);
+    -moz-transform: translate(-53vw, -68%);
+    -webkit-transform: translate(-53vw, -68%);
+    transform: translate(-53vw, -68%);
   }
 }
 @keyframes move-25 {
   47% {
-    -moz-transform: translate(-92vw, -29vh);
-    -webkit-transform: translate(-92vw, -29vh);
-    transform: translate(-92vw, -29vh);
+    -moz-transform: translate(-92vw, -29%);
+    -webkit-transform: translate(-92vw, -29%);
+    transform: translate(-92vw, -29%);
   }
 }
 @keyframes move-26 {
   56% {
-    -moz-transform: translate(-90vw, -92vh);
-    -webkit-transform: translate(-90vw, -92vh);
-    transform: translate(-90vw, -92vh);
+    -moz-transform: translate(-90vw, -92%);
+    -webkit-transform: translate(-90vw, -92%);
+    transform: translate(-90vw, -92%);
   }
 }
 @keyframes move-27 {
   49% {
-    -moz-transform: translate(-84vw, -78vh);
-    -webkit-transform: translate(-84vw, -78vh);
-    transform: translate(-84vw, -78vh);
+    -moz-transform: translate(-84vw, -78%);
+    -webkit-transform: translate(-84vw, -78%);
+    transform: translate(-84vw, -78%);
   }
 }
 @keyframes move-28 {
   40% {
-    -moz-transform: translate(-54vw, -20vh);
-    -webkit-transform: translate(-54vw, -20vh);
-    transform: translate(-54vw, -20vh);
+    -moz-transform: translate(-54vw, -20%);
+    -webkit-transform: translate(-54vw, -20%);
+    transform: translate(-54vw, -20%);
   }
 }
 @keyframes move-29 {
   34% {
-    -moz-transform: translate(-82vw, -12vh);
-    -webkit-transform: translate(-82vw, -12vh);
-    transform: translate(-82vw, -12vh);
+    -moz-transform: translate(-82vw, -12%);
+    -webkit-transform: translate(-82vw, -12%);
+    transform: translate(-82vw, -12%);
   }
 }
 @keyframes move-30 {
   37% {
-    -moz-transform: translate(-5vw, -72vh);
-    -webkit-transform: translate(-5vw, -72vh);
-    transform: translate(-5vw, -72vh);
+    -moz-transform: translate(-5vw, -72%);
+    -webkit-transform: translate(-5vw, -72%);
+    transform: translate(-5vw, -72%);
   }
 }
